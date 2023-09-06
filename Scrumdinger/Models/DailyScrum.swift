@@ -1,7 +1,8 @@
-//Listに表示させるデータを定義しているファイル
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import Foundation
-
 
 struct DailyScrum: Identifiable {
     let id: UUID
@@ -10,12 +11,12 @@ struct DailyScrum: Identifiable {
     var lengthInMinutes: Int
     var lengthInMinutesAsDouble: Double {
         get {
-                  Double(lengthInMinutes)
-              }
+            Double(lengthInMinutes)
+        }
         set {
-                  lengthInMinutes = Int(newValue)
-              }
-      }
+            lengthInMinutes = Int(newValue)
+        }
+    }
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
@@ -27,7 +28,6 @@ struct DailyScrum: Identifiable {
     }
 }
 
-
 extension DailyScrum {
     struct Attendee: Identifiable {
         let id: UUID
@@ -38,11 +38,11 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
     static var emptyScrum: DailyScrum {
-           DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
-       }
+        DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
+    }
 }
-
 
 extension DailyScrum {
     static let sampleData: [DailyScrum] =

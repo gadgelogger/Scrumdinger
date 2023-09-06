@@ -1,12 +1,8 @@
-//
-//  DetailEditView.swift
-//  Scrumdinger
-//
-//  Created by gadgelogger on 2023/09/06.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
-
 
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
@@ -19,17 +15,13 @@ struct DetailEditView: View {
                 HStack {
                     Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
                         Text("Length")
-                    }                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
-                        .accessibilityHidden(true)
-                    
-                    
+                    }
+                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
+                        .accessibilityHidden(true)
                 }
                 ThemePicker(selection: $scrum.theme)
-
-                
-                
             }
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) { attendee in
@@ -45,18 +37,17 @@ struct DetailEditView: View {
                             let attendee = DailyScrum.Attendee(name: newAttendeeName)
                             scrum.attendees.append(attendee)
                             newAttendeeName = ""
-                            
                         }
-                    }) {                        Image(systemName: "plus.circle.fill")                            .accessibilityLabel("Add attendee")
-                        
-                    }                    .disabled(newAttendeeName.isEmpty)
-                    
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add attendee")
+                    }
+                    .disabled(newAttendeeName.isEmpty)
                 }
             }
         }
     }
 }
-
 
 struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {

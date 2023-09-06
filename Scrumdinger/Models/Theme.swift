@@ -1,9 +1,10 @@
-//アプリ全体の色を定義しているファイル
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
-
-enum Theme: String {
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -31,6 +32,9 @@ enum Theme: String {
         Color(rawValue)
     }
     var name: String {
-           rawValue.capitalized
-       }
+        rawValue.capitalized
+    }
+    var id: String {
+        name
+    }
 }
