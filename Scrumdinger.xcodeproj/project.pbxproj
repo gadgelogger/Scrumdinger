@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2E0495032AA8B70700D3C2AE /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2E0495022AA8B70700D3C2AE /* ding.wav */; };
+		2E0495052AA9DD5800D3C2AE /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0495042AA9DD5800D3C2AE /* NewScrumSheet.swift */; };
+		2E0495072AA9DE3200D3C2AE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0495062AA9DE3200D3C2AE /* History.swift */; };
+		2E0495092AA9E2FB00D3C2AE /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0495082AA9E2FB00D3C2AE /* ScrumStore.swift */; };
 		2E0BE6212AA8B232003EAF40 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BE6202AA8B232003EAF40 /* ScrumTimer.swift */; };
 		2E0BE6232AA8B23C003EAF40 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BE6222AA8B23C003EAF40 /* AVPlayer+Ding.swift */; };
 		2E0BE6252AA8B3F6003EAF40 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BE6242AA8B3F6003EAF40 /* ScrumProgressViewStyle.swift */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		2E0495022AA8B70700D3C2AE /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ding.wav; path = ../../../../.Trash/Resources/ding.wav; sourceTree = "<group>"; };
+		2E0495042AA9DD5800D3C2AE /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
+		2E0495062AA9DE3200D3C2AE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		2E0495082AA9E2FB00D3C2AE /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		2E0BE6202AA8B232003EAF40 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrumTimer.swift; path = "../../../../../Downloads/ManagingStateAndLifeCycle 3/StartingProject/Scrumdinger/Models/ScrumTimer.swift"; sourceTree = "<group>"; };
 		2E0BE6222AA8B23C003EAF40 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Ding.swift"; path = "../../../../../Downloads/ManagingStateAndLifeCycle 3/StartingProject/Scrumdinger/Models/AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		2E0BE6242AA8B3F6003EAF40 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrumProgressViewStyle.swift; path = "../../../../../Downloads/ManagingStateAndLifeCycle 3/Complete/Scrumdinger/Views/ScrumProgressViewStyle.swift"; sourceTree = "<group>"; };
@@ -178,6 +184,9 @@
 				2E7068C32AA89CE800DDCE4A /* ThemePicker.swift */,
 				2E7068C72AA8ABCA00DDCE4A /* MeetingHeaderView.swift */,
 				2E7068C92AA8ADB500DDCE4A /* MeetingFooterView.swift */,
+				2E0495042AA9DD5800D3C2AE /* NewScrumSheet.swift */,
+				2E0495062AA9DE3200D3C2AE /* History.swift */,
+				2E0495082AA9E2FB00D3C2AE /* ScrumStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,14 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0495072AA9DE3200D3C2AE /* History.swift in Sources */,
 				2E7068C42AA89CE800DDCE4A /* ThemePicker.swift in Sources */,
 				2E7068B62AA759CF00DDCE4A /* DailyScrum.swift in Sources */,
 				2E0BE6252AA8B3F6003EAF40 /* ScrumProgressViewStyle.swift in Sources */,
 				2E0BE6212AA8B232003EAF40 /* ScrumTimer.swift in Sources */,
 				2E7068BE2AA8188300DDCE4A /* DetailView.swift in Sources */,
+				2E0495092AA9E2FB00D3C2AE /* ScrumStore.swift in Sources */,
 				2E0BE6232AA8B23C003EAF40 /* AVPlayer+Ding.swift in Sources */,
 				2E7068C82AA8ABCA00DDCE4A /* MeetingHeaderView.swift in Sources */,
 				2E7068CA2AA8ADB500DDCE4A /* MeetingFooterView.swift in Sources */,
+				2E0495052AA9DD5800D3C2AE /* NewScrumSheet.swift in Sources */,
 				2E7068C02AA8216C00DDCE4A /* DetailEditView.swift in Sources */,
 				2E7068BA2AA75F7900DDCE4A /* TrailingIconLabelStyle.swift in Sources */,
 				2E7068B42AA750A000DDCE4A /* Theme.swift in Sources */,
