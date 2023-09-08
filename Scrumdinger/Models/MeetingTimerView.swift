@@ -8,8 +8,11 @@
 import SwiftUI
 
 
+
+
 struct MeetingTimerView: View {
     let speakers: [ScrumTimer.Speaker]
+    let isRecording: Bool
     let theme: Theme
     
     private var currentSpeaker: String {
@@ -24,6 +27,10 @@ struct MeetingTimerView: View {
                     Text(currentSpeaker)
                         .font(.title)
                     Text("is speaking")
+                    Image(systemName: isRecording ? "mic" : "mic.slash")
+                        .font(.title)
+                        .padding(.top)
+                        .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(theme.accentColor)
@@ -42,12 +49,12 @@ struct MeetingTimerView: View {
 }
 
 
-struct MeetingTimerView_Previews: PreviewProvider {
+struct MeetingTimerView_Preview: PreviewProvider {
     static var speakers: [ScrumTimer.Speaker] {
         [ScrumTimer.Speaker(name: "Bill", isCompleted: true), ScrumTimer.Speaker(name: "Cathy", isCompleted: false)]
     }
     
     static var previews: some View {
-        MeetingTimerView(speakers: speakers, theme: .yellow)
+        MeetingTimerView(speakers: speakers, isRecording: true, theme: .yellow)
     }
 }
